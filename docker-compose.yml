@@ -38,7 +38,8 @@ services:
       networks:
         - gitlab-jenkins-net
     jenkins:
-      image: 'jenkins/jenkins:lts'
+#      image: 'jenkins/jenkins:lts'
+      image: 'bonzaphp/jenkins-php:v2.204.2'
       container_name: jenkins
       restart: unless-stopped
       hostname: 'jenkins.example.com'
